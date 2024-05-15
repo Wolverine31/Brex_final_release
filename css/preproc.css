@@ -1,0 +1,276 @@
+/* === BREX, Hillel Frontend Course Final Project === */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* === Used Variables === */
+/* === Used Variables END === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header .wrapper > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 24px;
+}
+header .wrapper > div > a {
+  margin-right: 30px;
+}
+header .wrapper > div nav {
+  display: flex;
+  align-items: center;
+}
+header .wrapper > div nav ul {
+  display: flex;
+  gap: 38px;
+}
+header .wrapper > div nav ul li {
+  list-style: none;
+}
+header .wrapper > div span {
+  display: flex;
+}
+header .wrapper > div span ul {
+  display: flex;
+  align-items: center;
+}
+header .wrapper > div span ul li {
+  list-style: none;
+}
+header .wrapper > div span ul li:last-of-type {
+  background: #F46A35;
+  border-radius: 10px;
+  padding: 7px 26px;
+  margin-left: 30px;
+}
+header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #212121;
+}
+
+/*.brex_offer_and_banner, .slideshow, .solutions {
+    max-width: 1200px;
+    padding: 0px 24px;
+}*/
+.brex_offer_and_banner .wrapper > div {
+  display: flex;
+  justify-content: space-between;
+}
+.brex_offer_and_banner .wrapper > div .offer {
+  min-width: 600px;
+}
+.brex_offer_and_banner .wrapper > div .offer h2 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #212121;
+  padding: 76px 0 0 48px;
+  max-width: 494px;
+  margin-bottom: 23px;
+}
+.brex_offer_and_banner .wrapper > div .offer div {
+  display: flex;
+  padding-left: 48px;
+  gap: 8px;
+  margin-bottom: 63px;
+}
+.brex_offer_and_banner .wrapper > div .offer div .primary {
+  background-color: #F46A35;
+  border-radius: 10px;
+  padding: 13px 32px;
+}
+.brex_offer_and_banner .wrapper > div .offer div .primary a {
+  color: #fff;
+}
+.brex_offer_and_banner .wrapper > div .offer div .secondary {
+  border-radius: 10px;
+  padding: 13px 32px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.brex_offer_and_banner .wrapper > div .offer div .secondary a {
+  color: #212121;
+}
+.brex_offer_and_banner .wrapper > div .offer .offer_description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 33px;
+  padding-bottom: 31px;
+  margin-bottom: inherit;
+}
+.brex_offer_and_banner .wrapper > div .offer .offer_description h4 {
+  margin-bottom: 9px;
+}
+.brex_offer_and_banner .wrapper > div .offer .offer_description p {
+  max-width: 456px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.02em;
+  color: #212121;
+  margin-right: 104px;
+  margin-bottom: 7px;
+}
+.brex_offer_and_banner .wrapper > div .offer .offer_description a {
+  color: #F46A35;
+}
+.brex_offer_and_banner .wrapper > div .banner {
+  max-width: 600px;
+}
+.brex_offer_and_banner .wrapper > div .banner::after {
+  content: url(../img/jpg/banner.jpg);
+  display: block;
+  /*width: 100%;*/
+}
+
+.solutions .wrapper h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 144%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #212121;
+  margin-top: 160px;
+  margin-bottom: 8px;
+}
+.solutions .wrapper p {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 168%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 48px;
+}
+
+.inner_wrapper {
+  display: flex;
+  margin: 16px 16px 72px 16px;
+  justify-content: center;
+}
+.inner_wrapper .enterprise::after {
+  content: url(../img/jpg/banner_brex_for_enterprise.jpg);
+  display: block;
+}
+.inner_wrapper .enterprise > div h4, .inner_wrapper .enterprise > div p, .inner_wrapper .enterprise > div a {
+  color: #fff;
+}
+.inner_wrapper .startup::after {
+  content: url(../img/jpg/banner_brex_for_startup.jpg);
+  display: block;
+}
+.inner_wrapper .startup > div h4, .inner_wrapper .startup > div p, .inner_wrapper .startup > div a {
+  color: #212121;
+}
+.inner_wrapper .enterprise, .inner_wrapper .startup {
+  position: relative;
+}
+.inner_wrapper .enterprise > div, .inner_wrapper .startup > div {
+  position: absolute;
+  max-width: 600px;
+  text-align: center;
+  left: 52px;
+}
+.inner_wrapper .enterprise > div h4, .inner_wrapper .startup > div h4 {
+  font-size: 32px;
+  line-height: 125%;
+  margin-top: 48px;
+  margin-bottom: 10px;
+}
+.inner_wrapper .enterprise > div p, .inner_wrapper .startup > div p {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 476px;
+  margin-bottom: 35px;
+}
+.inner_wrapper .enterprise > div h4, .inner_wrapper .enterprise > div p, .inner_wrapper .startup > div h4, .inner_wrapper .startup > div p {
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.inner_wrapper .enterprise > div span, .inner_wrapper .startup > div span {
+  text-align: center;
+  position: inherit;
+}
+.inner_wrapper .enterprise > div span a, .inner_wrapper .startup > div span a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+}
+
+.limits .wrapper {
+  background-color: #f9f9f9;
+  padding: 80px 48px;
+}
+.limits .wrapper .limits_offer_and_form {
+  display: flex;
+  flex-direction: column;
+}
+.limits .wrapper .limits_offer_and_form .limits_offer {
+  display: flex;
+  flex-direction: column;
+  max-width: 920px;
+}
+.limits .wrapper .limits_offer_and_form .limits_offer h3, .limits .wrapper .limits_offer_and_form .limits_offer p {
+  font-weight: 400;
+  color: #212121;
+}
+.limits .wrapper .limits_offer_and_form .limits_offer h3 {
+  font-size: 36px;
+  line-height: 144%;
+  letter-spacing: 0.04em;
+}
+.limits .wrapper .limits_offer_and_form .limits_offer p {
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  max-width: 850px;
+  margin-bottom: 12px;
+}
+.limits .wrapper .limits_offer_and_form .limits_offer span {
+  border: 1px solid #212121;
+  border-radius: 10px;
+  padding: 13px 21px;
+  max-width: 203px;
+  margin-bottom: 40px;
+}
+.limits .wrapper .limits_offer_and_form .limits_offer span a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #212121;
+}
+.limits .wrapper .limits_offer_and_form .limits_form {
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.1254901961);
+  border-radius: 12px;
+}
+.limits .wrapper .limits_offer_and_form .limits_form h3 {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  padding-top: 104px;
+}/*# sourceMappingURL=preproc.css.map */
