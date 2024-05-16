@@ -67,10 +67,6 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
   color: #212121;
 }
 
-/*.brex_offer_and_banner, .slideshow, .solutions {
-    max-width: 1200px;
-    padding: 0px 24px;
-}*/
 .brex_offer_and_banner .wrapper > div {
   display: flex;
   justify-content: space-between;
@@ -397,4 +393,222 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
   font-size: 16px;
   line-height: 125%;
   letter-spacing: 0.02em;
+}
+
+.how_2_use .wrapper div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.how_2_use .wrapper div h3 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #212121;
+  max-width: 687px;
+  display: block;
+  margin-bottom: 80px;
+}
+.how_2_use .wrapper div .company_cards {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+.how_2_use .wrapper div .company_cards .co_card {
+  max-width: 325px;
+}
+.how_2_use .wrapper div .company_cards .co_card p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #212121;
+  padding: 26px 0 22px 0;
+}
+.how_2_use .wrapper div .company_cards .co_card a {
+  color: #F46A35;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.how_2_use .wrapper div .company_list {
+  display: flex;
+  flex-direction: row;
+  max-width: 1100px;
+  margin: 81px 49px 161px;
+}
+.how_2_use .wrapper div .company_list span {
+  display: flex;
+  width: 275px;
+  padding: 40px;
+  height: 200px;
+  justify-content: center;
+  border: 1px solid rgba(33, 33, 33, 0.0823529412);
+  align-items: center;
+}
+.how_2_use .wrapper div .company_list span img {
+  height: 50px;
+}
+
+.can_do .wrapper > div {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(192, 192, 192, 0.0823529412);
+}
+.can_do .wrapper > div .offer {
+  min-width: 600px;
+}
+.can_do .wrapper > div .offer h2 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #212121;
+  padding: 76px 0 0 48px;
+  max-width: 494px;
+  margin-bottom: 23px;
+}
+.can_do .wrapper > div .offer p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  color: #212121;
+  max-width: 434px;
+  padding-left: 48px;
+  margin-bottom: 20px;
+}
+.can_do .wrapper > div .offer div {
+  display: flex;
+  padding-left: 48px;
+  gap: 16px;
+  margin-bottom: 63px;
+}
+.can_do .wrapper > div .offer div .primary {
+  background-color: #F46A35;
+  border-radius: 10px;
+  padding: 13px 32px;
+}
+.can_do .wrapper > div .offer div .primary a {
+  color: #fff;
+}
+.can_do .wrapper > div .offer div .secondary {
+  border-radius: 10px;
+  padding: 13px 32px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.can_do .wrapper > div .offer div .secondary a {
+  color: #212121;
+}
+.can_do .wrapper > div .banner {
+  max-width: 600px;
+}
+.can_do .wrapper > div .banner::after {
+  content: url(../img/png/banner_lower.png);
+  display: block;
+  /*width: 100%;*/
+}
+
+footer .wrapper {
+  background-color: #171717;
+}
+footer .wrapper .footer_inner_cover {
+  display: flex;
+  flex-direction: column;
+  padding: 122px 53px 121px 48px;
+}
+footer .wrapper .footer_inner_cover .upper_part {
+  display: flex;
+  gap: 200px;
+  margin-bottom: 100px;
+}
+footer .wrapper .footer_inner_cover .upper_part .footer_logo::before {
+  content: url(../img/svg/footer_logo_BREX.svg);
+  display: block;
+}
+footer .wrapper .footer_inner_cover .upper_part div span, footer .wrapper .footer_inner_cover .upper_part div ul li a {
+  font-weight: 400;
+}
+footer .wrapper .footer_inner_cover .upper_part div span {
+  color: #fff;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+footer .wrapper .footer_inner_cover .upper_part div ul li {
+  list-style: none;
+}
+footer .wrapper .footer_inner_cover .upper_part div ul li a {
+  font-size: 14px;
+  line-height: 157%;
+  color: #bcbdbd;
+}
+footer .wrapper .footer_inner_cover .middle_part_socials {
+  display: flex;
+  margin-bottom: 132px;
+  align-items: center;
+  gap: 192px;
+}
+footer .wrapper .footer_inner_cover .middle_part_socials .networks {
+  display: flex;
+  gap: 8px;
+}
+footer .wrapper .footer_inner_cover .middle_part_socials .networks .fb, footer .wrapper .footer_inner_cover .middle_part_socials .networks .youtube, footer .wrapper .footer_inner_cover .middle_part_socials .networks .insta, footer .wrapper .footer_inner_cover .middle_part_socials .networks .linkedin, footer .wrapper .footer_inner_cover .middle_part_socials .networks .twitter {
+  border: 1px solid rgba(192, 192, 192, 0.2509803922);
+  border-radius: 4px;
+  padding: 4px;
+  align-self: center;
+}
+footer .wrapper .footer_inner_cover .middle_part_socials .networks .fb::before {
+  content: url(../img/svg/socials_fb.svg);
+  display: block;
+  width: 20px;
+  padding: 4px 0 0 4px;
+}
+footer .wrapper .footer_inner_cover .middle_part_socials .networks .youtube::before {
+  content: url(../img/svg/socials_youtube.svg);
+  display: block;
+  width: 20px;
+  padding: 4px 0 0 4px;
+}
+footer .wrapper .footer_inner_cover .middle_part_socials .networks .insta::before {
+  content: url(../img/svg/socials_instagram.svg);
+  display: block;
+  width: 20px;
+  padding: 4px 0 0 4px;
+}
+footer .wrapper .footer_inner_cover .middle_part_socials .networks .linkedin::before {
+  content: url(../img/svg/socials_linkedin.svg);
+  display: block;
+  width: 20px;
+  padding: 4px 0 0 4px;
+}
+footer .wrapper .footer_inner_cover .middle_part_socials .networks .twitter::before {
+  content: url(../img/svg/socials_twitter.svg);
+  display: block;
+  width: 20px;
+  padding: 4px 0 0 4px;
+}
+footer .wrapper .footer_inner_cover .middle_part_socials .stores {
+  margin-top: 4px;
+}
+footer .wrapper .footer_inner_cover .middle_part_socials .stores img {
+  margin-right: 24px;
+}
+footer .wrapper .footer_inner_cover .lower_part p, footer .wrapper .footer_inner_cover .lower_part span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.02em;
+}
+footer .wrapper .footer_inner_cover .lower_part p {
+  color: #bcbdbd;
+  margin-bottom: 8px;
+}
+footer .wrapper .footer_inner_cover .lower_part span {
+  color: #fff;
 }/*# sourceMappingURL=preproc.css.map */

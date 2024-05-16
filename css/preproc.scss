@@ -81,11 +81,6 @@ header .wrapper > div {
     }
 }
 
-/*.brex_offer_and_banner, .slideshow, .solutions {
-    max-width: 1200px;
-    padding: 0px 24px;
-}*/
-
 .brex_offer_and_banner .wrapper > div {
     display: flex;
     justify-content: space-between;
@@ -438,6 +433,247 @@ header .wrapper > div {
             font-size: 16px;
             line-height: 125%;
             letter-spacing: 0.02em;
+        }
+    }
+}
+
+.how_2_use {
+    .wrapper {
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3 {
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 130%;
+                letter-spacing: 0.04em;
+                text-align: center;
+                color: #212121;
+                max-width: 687px;
+                display: block;
+                margin-bottom: 80px;
+            }
+            .company_cards {
+                display: flex;
+                flex-direction: row;
+                gap: 64px;
+                .co_card {
+                    max-width: 325px;
+                    p {
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 140%;
+                        letter-spacing: 0.02em;
+                        color: #212121;
+                        padding: 26px 0 22px 0;
+                    }
+                    a {
+                        color: $accent_color;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 150%;
+                    }
+                }
+            }
+            .company_list {
+                display: flex;
+                flex-direction: row;
+                max-width: 1100px;
+                margin: 81px 49px 161px;
+                span {
+                    display: flex;
+                    width: 275px;
+                    padding: 40px;
+                    height: 200px;
+                    justify-content: center;
+                    border: 1px solid #21212115;
+                    align-items: center;
+                    img {
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.can_do .wrapper > div {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c0c0c015;
+    
+    .offer {
+        min-width: 600px;
+
+            h2 {
+                font-family: $global_font;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 130%;
+                letter-spacing: 0.04em;
+                color: #212121;
+                padding: 76px 0 0 48px;
+                max-width: 494px;
+                margin-bottom: 23px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: #212121;
+                max-width: 434px;
+                padding-left: 48px;
+                margin-bottom: 20px;
+            }
+            div {
+                display: flex;
+                padding-left: 48px;
+                gap: 16px;
+                margin-bottom: 63px;
+
+                    .primary {
+                        background-color: $accent_color;
+                        border-radius: $btn_border_radius;
+                        padding: $btn_padding;
+                            a {
+                                color: #fff;
+                            }
+                    }
+                    .secondary {
+                        border-radius: $btn_border_radius;
+                        padding: $btn_padding;
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                        background-color: #fff;
+                            a {
+                                color: #212121;
+                            }
+                    }
+                }
+            
+    }
+    .banner {
+        max-width: 600px;
+
+        &::after {
+            content: url(../img/png/banner_lower.png);
+            display: block;
+            /*width: 100%;*/
+        }
+    }
+}
+
+footer .wrapper {
+    background-color: #171717;
+    .footer_inner_cover {
+        display: flex;
+        flex-direction: column;
+        padding: 122px 53px 121px 48px;
+        .upper_part {
+            display: flex;
+            gap: 200px;
+            margin-bottom: 100px;
+            .footer_logo {
+                &::before {
+                    content: url(../img/svg/footer_logo_BREX.svg);
+                    display: block;
+                }
+            }
+            div {
+                span, ul li a {
+                    font-weight: 400;
+                }
+                span {
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 150%;
+                    letter-spacing: 0.02em;
+                }
+                ul li {
+                    list-style: none;
+                }
+                ul li a {
+                    font-size: 14px;
+                    line-height: 157%;
+                    color: #bcbdbd;
+                }
+            }
+        }
+        .middle_part_socials {
+            display: flex;
+            margin-bottom: 132px;
+            align-items: center;
+            gap: 192px;
+            .networks {
+                display: flex;
+                gap: 8px;
+                .fb, .youtube, .insta, .linkedin, .twitter {
+                    border: 1px solid #c0c0c040;
+                    border-radius: 4px;
+                    padding: 4px;
+                    align-self: center;
+                }
+                .fb {
+                    &::before {
+                        content: url(../img/svg/socials_fb.svg);
+                        display: block;
+                        width: 20px;
+                        padding: 4px 0 0 4px;
+                    }
+                }
+                .youtube {
+                    &::before {
+                        content: url(../img/svg/socials_youtube.svg);
+                        display: block;
+                        width: 20px;
+                        padding: 4px 0 0 4px;
+                    }
+                }
+                .insta {
+                    &::before {
+                        content: url(../img/svg/socials_instagram.svg);
+                        display: block;
+                        width: 20px;
+                        padding: 4px 0 0 4px;
+                    }
+                }
+                .linkedin {
+                    &::before {
+                        content: url(../img/svg/socials_linkedin.svg);
+                        display: block;
+                        width: 20px;
+                        padding: 4px 0 0 4px;
+                    }
+                }
+                .twitter {
+                    &::before {
+                        content: url(../img/svg/socials_twitter.svg);
+                        display: block;
+                        width: 20px;
+                        padding: 4px 0 0 4px;
+                    }
+                }
+            }
+            .stores {
+                margin-top: 4px;
+                img {margin-right: 24px;}
+            }
+        }
+        .lower_part {
+            p, span {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 133%;
+                letter-spacing: 0.02em;
+            }
+            p {
+                color: #bcbdbd;
+                margin-bottom: 8px;
+            }
+            span {
+                color: #fff;
+            }
         }
     }
 }
