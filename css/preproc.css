@@ -273,4 +273,128 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
   font-size: 32px;
   text-align: center;
   padding-top: 104px;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form {
+  margin: 30px 212px 106px 265px;
+  /*border: #F46A35 1px solid;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div {
+  display: flex;
+  flex-direction: column;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div img {
+  border-radius: 50%;
+  width: 135px;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #212121;
+  text-align: center;
+  padding: 16px 0 4px 0px;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div span:last-of-type {
+  font-size: 12px;
+  color: rgba(33, 33, 33, 0.3137254902);
+  padding-top: inherit;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover {
+  position: relative;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover::before {
+  position: absolute;
+  pointer-events: none;
+  content: url(../img/svg/form_icon_travel.svg);
+  width: 16px;
+  height: 16px;
+  display: block;
+  top: 8px;
+  left: 12px;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover:nth-child(2)::before {
+  position: absolute;
+  pointer-events: none;
+  content: url(../img/svg/form_icon_offsites.svg);
+  width: 16px;
+  height: 16px;
+  display: block;
+  top: 8px;
+  left: 12px;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover:nth-child(3)::before {
+  position: absolute;
+  pointer-events: none;
+  content: url(../img/svg/form_icon_procurement.svg);
+  width: 16px;
+  height: 16px;
+  display: block;
+  top: 8px;
+  left: 12px;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover:nth-child(4)::before {
+  position: absolute;
+  pointer-events: none;
+  content: url(../img/svg/form_icon_stipendis.svg);
+  width: 16px;
+  height: 16px;
+  display: block;
+  top: 8px;
+  left: 12px;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover:last-child::before {
+  position: absolute;
+  pointer-events: none;
+  content: url(../img/svg/form_icon_budget.svg);
+  width: 16px;
+  height: 16px;
+  display: block;
+  top: 8px;
+  left: 12px;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover input {
+  min-width: 416px;
+  max-width: inherit;
+  padding: 12px 18px 12px 48px;
+  border: 1px solid rgba(192, 192, 192, 0.1882352941);
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover input:hover {
+  border: 1px solid rgba(33, 33, 33, 0.4392156863);
+  box-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1882352941);
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover input:focus {
+  border: 1px solid #F46A35;
+  box-shadow: 4px 4px 4px #F46A35;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover input::-moz-placeholder {
+  margin-left: 100px;
+}
+.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover input::placeholder {
+  margin-left: 100px;
+}
+
+.lower_slider_cover {
+  display: flex;
+  justify-content: center;
+}
+.lower_slider_cover .lower_slider_item {
+  text-align: center;
+  margin: 251px 0 227px 0px;
+}
+.lower_slider_cover .lower_slider_item p {
+  max-width: 673px;
+  margin: 49px 0 48px 0;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 109%;
+}
+.lower_slider_cover .lower_slider_item span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
 }/*# sourceMappingURL=preproc.css.map */
