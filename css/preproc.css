@@ -618,6 +618,7 @@ footer .wrapper .footer_inner_cover .lower_part span {
 }
 .owl-carousel .owl-dots {
   text-align: center;
+  padding-top: 32px;
 }
 .owl-carousel .owl-dots .owl-dot span {
   display: inline-block;
@@ -633,4 +634,31 @@ footer .wrapper .footer_inner_cover .lower_part span {
 .owl-carousel .owl-item img {
   display: block;
   width: auto;
+}
+.owl-carousel .owl-nav button.owl-prev {
+  border: 1px solid #F46A35;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 64px;
+  width: 40px;
+  margin: 8px;
+}
+.owl-carousel .owl-nav button.owl-prev span {
+  font-size: 32px;
+  text-align: center;
+}
+.owl-carousel .owl-nav button.owl-next {
+  border: 1px solid #F46A35;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  width: 40px;
+  margin: 8px;
+}
+.owl-carousel .owl-nav button.owl-next span {
+  font-size: 32px;
+  text-align: center;
 }/*# sourceMappingURL=preproc.css.map */
