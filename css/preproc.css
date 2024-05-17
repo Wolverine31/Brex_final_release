@@ -379,11 +379,14 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
 }
 .lower_slider_cover .lower_slider_item {
   text-align: center;
-  margin: 251px 0 227px 0px;
+  margin: 60px 0 32px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .lower_slider_cover .lower_slider_item p {
   max-width: 673px;
-  margin: 49px 0 48px 0;
+  margin: 49px 0 24px 0;
   font-weight: 400;
   font-size: 22px;
   line-height: 109%;
@@ -615,6 +618,8 @@ footer .wrapper .footer_inner_cover .lower_part span {
 
 .owl-carousel {
   padding: 80px 0 48px 0;
+  width: 80%;
+  margin: auto;
 }
 .owl-carousel .owl-dots {
   text-align: center;
@@ -631,6 +636,10 @@ footer .wrapper .footer_inner_cover .lower_part span {
 .owl-carousel .owl-dots .owl-dot.active span {
   background-color: #F46A35;
 }
+.owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+}
 .owl-carousel .owl-item img {
   display: block;
   width: auto;
@@ -641,6 +650,7 @@ footer .wrapper .footer_inner_cover .lower_part span {
   background-color: #fff;
   position: absolute;
   top: 64px;
+  left: -60px;
   width: 40px;
   margin: 8px;
 }
@@ -654,7 +664,7 @@ footer .wrapper .footer_inner_cover .lower_part span {
   background-color: #fff;
   position: absolute;
   top: 64px;
-  right: 0;
+  right: -60px;
   width: 40px;
   margin: 8px;
 }
