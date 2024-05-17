@@ -680,24 +680,29 @@ footer .wrapper {
 
 .owl-carousel {
     padding: 80px 0 48px 0;
-}
-
-.owl-dots {
-    text-align: center;
-      
-    .owl-dot {
-        span {
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background-color: #21212150;
-            margin-right: 12px;
+    .owl-dots {
+        text-align: center;
+        .owl-item {
+            img {
+                display: block;
+            }
         }
-        &.active {
+          
+        .owl-dot {
             span {
-                background-color: $accent_color;
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #21212150;
+                margin-right: 12px;
+            }
+            &.active {
+                span {
+                    background-color: $accent_color;
+                }
             }
         }
     }
 }
+

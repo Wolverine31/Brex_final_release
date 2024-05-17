@@ -616,11 +616,13 @@ footer .wrapper .footer_inner_cover .lower_part span {
 .owl-carousel {
   padding: 80px 0 48px 0;
 }
-
-.owl-dots {
+.owl-carousel .owl-dots {
   text-align: center;
 }
-.owl-dots .owl-dot span {
+.owl-carousel .owl-dots .owl-item img {
+  display: block;
+}
+.owl-carousel .owl-dots .owl-dot span {
   display: inline-block;
   width: 8px;
   height: 8px;
@@ -628,6 +630,6 @@ footer .wrapper .footer_inner_cover .lower_part span {
   background-color: rgba(33, 33, 33, 0.3137254902);
   margin-right: 12px;
 }
-.owl-dots .owl-dot.active span {
+.owl-carousel .owl-dots .owl-dot.active span {
   background-color: #F46A35;
 }/*# sourceMappingURL=preproc.css.map */
