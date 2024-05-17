@@ -681,13 +681,7 @@ footer .wrapper {
 .owl-carousel {
     padding: 80px 0 48px 0;
     .owl-dots {
-        text-align: center;
-        .owl-item {
-            img {
-                display: block;
-            }
-        }
-          
+        text-align: center;      
         .owl-dot {
             span {
                 display: inline-block;
@@ -702,6 +696,12 @@ footer .wrapper {
                     background-color: $accent_color;
                 }
             }
+        }
+    }
+    .owl-item {
+        img {
+            display: block;
+            width: auto;
         }
     }
 }

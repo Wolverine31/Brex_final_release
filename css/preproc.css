@@ -619,9 +619,6 @@ footer .wrapper .footer_inner_cover .lower_part span {
 .owl-carousel .owl-dots {
   text-align: center;
 }
-.owl-carousel .owl-dots .owl-item img {
-  display: block;
-}
 .owl-carousel .owl-dots .owl-dot span {
   display: inline-block;
   width: 8px;
@@ -632,4 +629,8 @@ footer .wrapper .footer_inner_cover .lower_part span {
 }
 .owl-carousel .owl-dots .owl-dot.active span {
   background-color: #F46A35;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: auto;
 }/*# sourceMappingURL=preproc.css.map */
