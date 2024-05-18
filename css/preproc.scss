@@ -9,6 +9,13 @@ $btn_border_radius: 10px;
 $btn_padding: 13px 32px;
 /* === Used Variables END === */
 
+/* === Accordion Variables === */
+$bg: #fff;
+$text: #212121;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$blue: #f46c0c;
+
 * {
     margin: 0;
     padding: 0;
@@ -750,3 +757,117 @@ footer .wrapper {
     }
 }
 
+.FAQ {
+    .wrapper {
+        background-color: #faebd7;
+        margin-bottom: 80px;
+    }
+}
+
+/* Accordion */
+.container {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 48rem;
+  }
+  
+  .accordion {
+    .accordion-item {
+      border-bottom: 1px solid $gray;
+      background-color: white;
+      padding: 0 12px;
+      button[aria-expanded='true'] {
+        border-bottom: 1px solid $accent_color;
+      }
+    }
+    button {
+      position: relative;
+      display: block;
+      text-align: left;
+      width: 100%;
+      padding: 1em 0;
+      color: $text;
+      font-size: 1.15rem;
+      font-weight: 400;
+      border: none;
+      background: none;
+      outline: none;
+      &:hover, &:focus {
+        cursor: pointer;
+        color: $blue;
+        &::after {
+          cursor: pointer;
+          color: $blue;
+          border: 1px solid $blue;
+        }
+      }
+      .accordion-title {
+        padding: 1em 1.5em 1em 0;
+      }
+      .icon {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        right: 0;
+        width: 22px;
+        height: 22px;
+        border: 1px solid;
+        border-radius: 22px;
+        &::before {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 9px;
+          left: 5px;
+          width: 10px;
+          height: 2px;
+          background: currentColor;
+        }
+        &::after {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 5px;
+          left: 9px;
+          width: 2px;
+          height: 10px;
+          background: currentColor;
+        }
+      }
+    }
+    button[aria-expanded='true'] {
+      color: $blue;
+      .icon {
+        &::after {
+          width: 0;
+        }
+      }
+      + .accordion-content {
+        opacity: 1;
+        max-height: 30em;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+      }
+    }
+    .accordion-content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 2em 0;
+      }
+      ul {
+        margin-bottom: 24px;
+        li {
+            padding: 8px;
+            span {
+                font-weight: 600;
+            }
+        }
+      }
+    }
+  }
