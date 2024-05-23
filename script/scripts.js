@@ -32,12 +32,12 @@ $(document).ready(function(){
         nav: false,
         dots: true,
         responsive:{
-                    // 0:{
-                    //     items:1
-                    // },
-                    // 500: {
-                    //     items:2
-                    // },
+                    0:{
+                        items:1
+                    },
+                    500: {
+                        items:1
+                    },
                     1100:{
                         items:1
                     }

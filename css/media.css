@@ -4,7 +4,6 @@
         display: none;
     }
     #menuToggle {
-   
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
@@ -13,10 +12,8 @@
       {
         text-decoration: none;
         color: #232323;
-        
         transition: color 0.3s ease;
       }
-      
       
       #menuToggle span:first-child {
         transform-origin: 0% 0%;
@@ -31,7 +28,6 @@
         cursor: pointer;
         opacity: 0;
         width: 40px;
-      
         z-index: 2; /* in order to place the checkbox over the hamburguer */
         -webkit-touch-callout: none;
       }
@@ -67,26 +63,202 @@
       #menu {
         position: absolute;
         left: -300px;
-        top: 80px;
+        /*top: 80px; */
         width: 200px;
         margin: -100px 0 0 -50px;
         padding: 50px;
-        padding-top: 125px;
-        background: pink;
+        padding-top: 100px;
+        background: #f46a35;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
-      
         transition: left 0.5s;
-        
       }
       
       #menu li {
-        padding: 10px 0;
-        font-size: 22px;
+        padding: 4px 0;
+        font-size: 18px;
+      }
+      #menu li ul {
+        opacity: 0;
+        height: 0;
+      }
+      #menu li ul:hover {
+        opacity: 1;
       }
       #menuToggle input:checked ~ ul {
         left: 280px;
       }
+
+      .brex_offer_and_banner .wrapper > div {
+        display: flex;
+        flex-direction: column;
+      }
+      .brex_offer_and_banner .wrapper > div .offer {
+        min-width: 400px;
+      }
+      .brex_offer_and_banner .wrapper > div .offer h2 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 130%;
+        /* letter-spacing: 0.04em; */
+        color: #212121;
+        padding: 52px 0 0 24px;
+        margin-bottom: 40px;
+        }
+        .brex_offer_and_banner .wrapper > div .offer div {
+            display: flex;
+            padding-left: 24px;
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+        .brex_offer_and_banner .wrapper > div .banner {
+            min-width: 400px;
+        }
+        .brex_offer_and_banner .wrapper > div .banner::after {
+            content: url(../img/jpg/banner_400.jpg);
+            display: block;
+            text-align: center;
+        }
+
+        .solutions .wrapper h2 {
+            font-size: 40px;
+            font-weight: 500;
+            margin-top: 80px;
+        }
+
+        .enterprise_startup .wrapper .inner_wrapper {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            align-items: center;
+        }
+        .inner_wrapper .enterprise::after {
+            content: url(../img/jpg/enterprise_400.jpg);
+            display: block;
+        }
+        .inner_wrapper .startup::after {
+            content: url(../img/jpg/startup_400.jpg);
+            display: block;
+        }
+        .inner_wrapper .enterprise > div, .inner_wrapper .startup > div {
+            position: absolute;
+            padding: 0 24px;
+            left: 0;
+        }
+        .inner_wrapper .enterprise > div h4, .inner_wrapper .startup > div h4 {
+            font-size: 32px;
+            line-height: 125%;
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+        .inner_wrapper .enterprise > div p, .inner_wrapper .startup > div p {
+            margin-bottom: 24px;
+        }
+        .inner_wrapper .enterprise > div span, .inner_wrapper .startup > div span {
+            position: absolute;
+        }
+        .limits .wrapper .limits_offer_and_form .limits_form {
+            position: relative;
+        }
+        .limits .wrapper .limits_offer_and_form .limits_form h3 {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+        .limits .wrapper .limits_offer_and_form .limits_form form {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover input {
+            min-width: 300px;
+        }
+        .FAQ .wrapper .container {
+            padding: 8px;
+            width: 100%;
+        }
+        .FAQ .wrapper .container h2 {
+            font-size: 28px;
+            text-align: center;
+        }
+        .how_2_use .wrapper div .company_cards {
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+        }
+        .how_2_use .wrapper div .company_list {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .how_2_use .wrapper div .company_list span {
+            padding: 16px;
+            height: 80px;
+        }
+        .can_do .wrapper > div {
+            display: flex;
+            flex-direction: column;
+        }
+        .can_do .wrapper > div .offer {
+            max-width: 420px;
+            text-align: center;
+        }
+        .can_do .wrapper > div .offer h2 {
+            padding: 24px;
+            max-width: 428px;
+            margin-bottom: 0;
+        }
+        .can_do .wrapper > div .offer p {
+            font-size: 18px;
+            padding: 0 24px;
+        }
+        .can_do .wrapper > div .offer div {
+            display: flex;
+            padding: 0 24px;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            max-width: 428px;
+        }
+        .can_do .wrapper > div .banner {
+            max-width: 428px;
+        }
+        .can_do .wrapper > div .banner::after {
+            content: url(../img/png/banner_lower_400.png);
+            display: block;
+            text-align: center;
+        }
+        footer .wrapper .footer_inner_cover {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 24px 0;
+        }
+        footer .wrapper .footer_inner_cover .upper_part {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        footer .wrapper .footer_inner_cover .upper_part div {
+            min-width: 180px;
+        }
+        footer .wrapper .footer_inner_cover .middle_part_socials { 
+            gap: 52px;
+            align-items: start;
+            margin-bottom: 100px;
+        }
+        footer .wrapper .footer_inner_cover .middle_part_socials .networks {
+            flex-wrap: wrap;
+            max-width: 120px;
+        }
+        footer .wrapper .footer_inner_cover .middle_part_socials .stores {
+            margin-top: 0;
+        }
+        .owl-carousel .owl-nav button.owl-prev {
+            left: -40px;
+        }
+        .owl-carousel .owl-nav button.owl-prev {
+            right: -40px;
+        }
 }
 
 @media only screen and (min-width: 430px) {
