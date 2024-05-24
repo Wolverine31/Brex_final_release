@@ -43,6 +43,11 @@ header .wrapper > div nav ul {
 header .wrapper > div nav ul li {
   list-style: none;
 }
+header .wrapper > div nav ul li:first-of-type::after, header .wrapper > div nav ul li:nth-of-type(2)::after, header .wrapper > div nav ul li:last-of-type::after {
+  content: url(../img/svg/Menu_Arrow_Up.svg);
+  display: inline-block;
+  padding-left: 4px;
+}
 header .wrapper > div span {
   display: flex;
 }
@@ -52,12 +57,20 @@ header .wrapper > div span ul {
 }
 header .wrapper > div span ul li {
   list-style: none;
+  margin-right: 20px;
 }
 header .wrapper > div span ul li:last-of-type {
   background: #F46A35;
   border-radius: 10px;
   padding: 7px 26px;
   margin-left: 30px;
+  margin-right: 0;
+}
+header .wrapper > div span ul li:last-of-type:hover {
+  background-color: chocolate;
+}
+header .wrapper > div span ul li:last-of-type:hover a {
+  color: #fff;
 }
 header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
   text-decoration: none;
@@ -101,6 +114,9 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
 .brex_offer_and_banner .wrapper > div .offer div .primary a {
   color: #fff;
 }
+.brex_offer_and_banner .wrapper > div .offer div .primary:hover {
+  background-color: chocolate;
+}
 .brex_offer_and_banner .wrapper > div .offer div .secondary {
   border-radius: 10px;
   padding: 13px 32px;
@@ -109,6 +125,9 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
 }
 .brex_offer_and_banner .wrapper > div .offer div .secondary a {
   color: #212121;
+}
+.brex_offer_and_banner .wrapper > div .offer div .secondary:hover {
+  border: 1px solid chocolate;
 }
 .brex_offer_and_banner .wrapper > div .offer .offer_description {
   display: flex;
@@ -259,6 +278,9 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
   font-size: 14px;
   line-height: 157%;
   color: #212121;
+}
+.limits .wrapper .limits_offer_and_form .limits_offer span:hover {
+  border: 1px solid chocolate;
 }
 .limits .wrapper .limits_offer_and_form .limits_form {
   background-color: #fff;
@@ -500,6 +522,9 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
 .can_do .wrapper > div .offer div .primary a {
   color: #fff;
 }
+.can_do .wrapper > div .offer div .primary:hover {
+  background-color: chocolate;
+}
 .can_do .wrapper > div .offer div .secondary {
   border-radius: 10px;
   padding: 13px 32px;
@@ -508,6 +533,9 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
 }
 .can_do .wrapper > div .offer div .secondary a {
   color: #212121;
+}
+.can_do .wrapper > div .offer div .secondary:hover {
+  border: 1px solid chocolate;
 }
 .can_do .wrapper > div .banner {
   max-width: 600px;
@@ -547,10 +575,16 @@ footer .wrapper .footer_inner_cover .upper_part div span {
 footer .wrapper .footer_inner_cover .upper_part div ul li {
   list-style: none;
 }
+footer .wrapper .footer_inner_cover .upper_part div ul li:hover {
+  background-color: #F46A35;
+}
 footer .wrapper .footer_inner_cover .upper_part div ul li a {
   font-size: 14px;
   line-height: 157%;
   color: #bcbdbd;
+}
+footer .wrapper .footer_inner_cover .upper_part div ul li a:hover {
+  color: #212121;
 }
 footer .wrapper .footer_inner_cover .middle_part_socials {
   display: flex;
@@ -567,6 +601,9 @@ footer .wrapper .footer_inner_cover .middle_part_socials .networks .fb, footer .
   border-radius: 4px;
   padding: 4px;
   align-self: center;
+}
+footer .wrapper .footer_inner_cover .middle_part_socials .networks .fb:hover, footer .wrapper .footer_inner_cover .middle_part_socials .networks .youtube:hover, footer .wrapper .footer_inner_cover .middle_part_socials .networks .insta:hover, footer .wrapper .footer_inner_cover .middle_part_socials .networks .linkedin:hover, footer .wrapper .footer_inner_cover .middle_part_socials .networks .twitter:hover {
+  filter: drop-shadow(2px 2px 0.8rem #F46A35);
 }
 footer .wrapper .footer_inner_cover .middle_part_socials .networks .fb::before {
   content: url(../img/svg/socials_fb.svg);

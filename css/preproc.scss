@@ -56,6 +56,11 @@ header .wrapper > div {
 
             li {
                 list-style: none;
+                &:first-of-type::after, &:nth-of-type(2)::after, &:last-of-type::after {
+                    content: url(../img/svg/Menu_Arrow_Up.svg);
+                    display: inline-block;
+                    padding-left: 4px;
+                }
             }
         }
     }
@@ -68,12 +73,20 @@ header .wrapper > div {
 
             li {
                 list-style: none;
+                margin-right: 20px;
 
                 &:last-of-type {
                     background: $accent_color;
                     border-radius: 10px;
                     padding: 7px 26px;
                     margin-left: 30px;
+                    margin-right: 0;
+                    &:hover {
+                        background-color: chocolate;
+                        a {
+                        color: #fff;
+                        }
+                    }
                 }
             }
         }
@@ -120,6 +133,9 @@ header .wrapper > div {
                             a {
                                 color: #fff;
                             }
+                            &:hover {
+                                background-color: chocolate;
+                            }
                     }
                     .secondary {
                         border-radius: $btn_border_radius;
@@ -128,6 +144,9 @@ header .wrapper > div {
                         background-color: #fff;
                             a {
                                 color: #212121;
+                            }
+                            &:hover {
+                                border: 1px solid chocolate;
                             }
                     }
                 }
@@ -297,6 +316,9 @@ header .wrapper > div {
                         font-size: 14px;
                         line-height: 157%;
                         color: #212121;
+                    }
+                    &:hover {
+                        border: 1px solid chocolate;
                     }
                 }
             }
@@ -557,6 +579,9 @@ header .wrapper > div {
                             a {
                                 color: #fff;
                             }
+                            &:hover {
+                                background-color: chocolate;
+                            }
                     }
                     .secondary {
                         border-radius: $btn_border_radius;
@@ -565,6 +590,9 @@ header .wrapper > div {
                         background-color: #fff;
                             a {
                                 color: #212121;
+                            }
+                            &:hover {
+                                border: 1px solid chocolate;
                             }
                     }
                 }
@@ -609,11 +637,17 @@ footer .wrapper {
                 }
                 ul li {
                     list-style: none;
+                    &:hover {
+                        background-color: $accent_color;
+                    }
                 }
                 ul li a {
                     font-size: 14px;
                     line-height: 157%;
                     color: #bcbdbd;
+                    &:hover {
+                        color: #212121;
+                    }
                 }
             }
         }
@@ -630,6 +664,9 @@ footer .wrapper {
                     border-radius: 4px;
                     padding: 4px;
                     align-self: center;
+                    &:hover {
+                        filter: drop-shadow(2px 2px 0.8rem $accent_color);
+                    }
                 }
                 .fb {
                     &::before {
