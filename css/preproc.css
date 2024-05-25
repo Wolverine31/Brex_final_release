@@ -133,8 +133,10 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
   display: flex;
   flex-direction: column;
   padding-top: 33px;
-  padding-bottom: 31px;
+  padding-bottom: 44px;
   margin-bottom: inherit;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.3137254902);
+  width: 90%;
 }
 .brex_offer_and_banner .wrapper > div .offer .offer_description h4 {
   margin-bottom: 9px;
@@ -237,8 +239,10 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
   line-height: 157%;
 }
 
-.limits .wrapper {
+.limits {
   background-color: #f9f9f9;
+}
+.limits .wrapper {
   padding: 80px 48px;
 }
 .limits .wrapper .limits_offer_and_form {
@@ -294,87 +298,36 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
   text-align: center;
   padding-top: 104px;
 }
-.limits .wrapper .limits_offer_and_form .limits_form form {
+.limits .wrapper .limits_offer_and_form .limits_form .form_layout {
   margin: 30px 212px 106px 265px;
   /*border: #F46A35 1px solid;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.limits .wrapper .limits_offer_and_form .limits_form form div {
+.limits .wrapper .limits_offer_and_form .limits_form .form_layout div {
   display: flex;
   flex-direction: column;
 }
-.limits .wrapper .limits_offer_and_form .limits_form form div img {
+.limits .wrapper .limits_offer_and_form .limits_form .form_layout div img {
   border-radius: 50%;
   width: 135px;
 }
-.limits .wrapper .limits_offer_and_form .limits_form form div span {
+.limits .wrapper .limits_offer_and_form .limits_form .form_layout div span {
   font-size: 14px;
   font-weight: 600;
   color: #212121;
   text-align: center;
   padding: 16px 0 4px 0px;
 }
-.limits .wrapper .limits_offer_and_form .limits_form form div span:last-of-type {
+.limits .wrapper .limits_offer_and_form .limits_form .form_layout div span:last-of-type {
   font-size: 12px;
   color: rgba(33, 33, 33, 0.3137254902);
   padding-top: inherit;
 }
-.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover {
+.limits .wrapper .limits_offer_and_form .limits_form .form_layout div:last-of-type .cover {
   position: relative;
-}
-.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover::before {
-  position: absolute;
-  pointer-events: none;
-  content: url(../img/svg/form_icon_travel.svg);
-  width: 16px;
-  height: 16px;
-  display: block;
-  top: 8px;
-  left: 12px;
-}
-.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover:nth-child(2)::before {
-  position: absolute;
-  pointer-events: none;
-  content: url(../img/svg/form_icon_offsites.svg);
-  width: 16px;
-  height: 16px;
-  display: block;
-  top: 8px;
-  left: 12px;
-}
-.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover:nth-child(3)::before {
-  position: absolute;
-  pointer-events: none;
-  content: url(../img/svg/form_icon_procurement.svg);
-  width: 16px;
-  height: 16px;
-  display: block;
-  top: 8px;
-  left: 12px;
-}
-.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover:nth-child(4)::before {
-  position: absolute;
-  pointer-events: none;
-  content: url(../img/svg/form_icon_stipendis.svg);
-  width: 16px;
-  height: 16px;
-  display: block;
-  top: 8px;
-  left: 12px;
-}
-.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover:last-child::before {
-  position: absolute;
-  pointer-events: none;
-  content: url(../img/svg/form_icon_budget.svg);
-  width: 16px;
-  height: 16px;
-  display: block;
-  top: 8px;
-  left: 12px;
-}
-.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover input {
+  list-style: none;
   min-width: 416px;
   max-width: inherit;
   padding: 12px 18px 12px 48px;
@@ -382,19 +335,37 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
   margin-bottom: 8px;
   border-radius: 8px;
 }
-.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover input:hover {
+.limits .wrapper .limits_offer_and_form .limits_form .form_layout div:last-of-type .cover:hover {
   border: 1px solid rgba(33, 33, 33, 0.4392156863);
-  box-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1882352941);
+  box-shadow: 4px 4px 4px rgba(219, 81, 81, 0.3137254902);
 }
-.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover input:focus {
-  border: 1px solid #F46A35;
-  box-shadow: 4px 4px 4px #F46A35;
+.limits .wrapper .limits_offer_and_form .limits_form .form_layout div:last-of-type .cover::before, .limits .wrapper .limits_offer_and_form .limits_form .form_layout div:last-of-type .cover:nth-child(2)::before, .limits .wrapper .limits_offer_and_form .limits_form .form_layout div:last-of-type .cover:nth-child(3)::before, .limits .wrapper .limits_offer_and_form .limits_form .form_layout div:last-of-type .cover:nth-child(4)::before, .limits .wrapper .limits_offer_and_form .limits_form .form_layout div:last-of-type .cover:last-child::before {
+  position: absolute;
+  pointer-events: none;
+  width: 16px;
+  height: 16px;
+  top: 8px;
+  left: 12px;
 }
-.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover input::-moz-placeholder {
-  margin-left: 100px;
+.limits .wrapper .limits_offer_and_form .limits_form .form_layout div:last-of-type .cover::before {
+  content: url(../img/svg/form_icon_travel.svg);
+  display: block;
 }
-.limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover input::placeholder {
-  margin-left: 100px;
+.limits .wrapper .limits_offer_and_form .limits_form .form_layout div:last-of-type .cover:nth-child(2)::before {
+  content: url(../img/svg/form_icon_offsites.svg);
+  display: block;
+}
+.limits .wrapper .limits_offer_and_form .limits_form .form_layout div:last-of-type .cover:nth-child(3)::before {
+  content: url(../img/svg/form_icon_procurement.svg);
+  display: block;
+}
+.limits .wrapper .limits_offer_and_form .limits_form .form_layout div:last-of-type .cover:nth-child(4)::before {
+  content: url(../img/svg/form_icon_stipendis.svg);
+  display: block;
+}
+.limits .wrapper .limits_offer_and_form .limits_form .form_layout div:last-of-type .cover:last-child::before {
+  content: url(../img/svg/form_icon_budget.svg);
+  display: block;
 }
 
 .lower_slider_cover {
@@ -460,6 +431,10 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
   font-size: 16px;
   line-height: 150%;
 }
+.how_2_use .wrapper div .company_cards .co_card a img:hover {
+  box-shadow: 0px 0px 12px 2px #f09b1b;
+  border-radius: 10px;
+}
 .how_2_use .wrapper div .company_list {
   display: flex;
   flex-direction: row;
@@ -475,35 +450,40 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
   border: 1px solid rgba(33, 33, 33, 0.0823529412);
   align-items: center;
 }
+.how_2_use .wrapper div .company_list span:hover {
+  border: 1px solid #F46A35;
+  background-color: rgba(33, 33, 33, 0.0823529412);
+}
 .how_2_use .wrapper div .company_list span img {
   height: 50px;
 }
 
+.can_do {
+  background-color: rgba(192, 192, 192, 0.1254901961);
+}
 .can_do .wrapper > div {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(192, 192, 192, 0.0823529412);
 }
 .can_do .wrapper > div .offer {
   min-width: 600px;
 }
-.can_do .wrapper > div .offer h2 {
-  font-family: "Roboto";
+.can_do .wrapper > div .offer h2, .can_do .wrapper > div .offer p {
   font-weight: 400;
+  color: #212121;
+}
+.can_do .wrapper > div .offer h2 {
   font-size: 40px;
   line-height: 130%;
   letter-spacing: 0.04em;
-  color: #212121;
   padding: 76px 0 0 48px;
   max-width: 494px;
   margin-bottom: 23px;
 }
 .can_do .wrapper > div .offer p {
-  font-weight: 400;
   font-size: 20px;
   line-height: 160%;
   letter-spacing: 0.02em;
-  color: #212121;
   max-width: 434px;
   padding-left: 48px;
   margin-bottom: 20px;
@@ -546,112 +526,121 @@ header .wrapper > div nav ul li a, header .wrapper > div span ul li a {
   /*width: 100%;*/
 }
 
-footer .wrapper {
+footer {
   background-color: #171717;
 }
-footer .wrapper .footer_inner_cover {
+footer .footer_inner_cover {
   display: flex;
   flex-direction: column;
   padding: 122px 53px 121px 48px;
 }
-footer .wrapper .footer_inner_cover .upper_part {
+footer .footer_inner_cover .upper_part {
   display: flex;
   gap: 200px;
   margin-bottom: 100px;
+  align-items: flex-start;
 }
-footer .wrapper .footer_inner_cover .upper_part .footer_logo::before {
-  content: url(../img/svg/footer_logo_BREX.svg);
-  display: block;
-}
-footer .wrapper .footer_inner_cover .upper_part div span, footer .wrapper .footer_inner_cover .upper_part div ul li a {
+footer .footer_inner_cover .upper_part div span, footer .footer_inner_cover .upper_part div ul li a {
   font-weight: 400;
 }
-footer .wrapper .footer_inner_cover .upper_part div span {
+footer .footer_inner_cover .upper_part div span {
   color: #fff;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
 }
-footer .wrapper .footer_inner_cover .upper_part div ul li {
+footer .footer_inner_cover .upper_part div ul li {
   list-style: none;
 }
-footer .wrapper .footer_inner_cover .upper_part div ul li:hover {
+footer .footer_inner_cover .upper_part div ul li:hover {
   background-color: #F46A35;
+  border-radius: 2px;
 }
-footer .wrapper .footer_inner_cover .upper_part div ul li a {
+footer .footer_inner_cover .upper_part div ul li a {
   font-size: 14px;
   line-height: 157%;
   color: #bcbdbd;
 }
-footer .wrapper .footer_inner_cover .upper_part div ul li a:hover {
+footer .footer_inner_cover .upper_part div ul li a:hover {
   color: #212121;
 }
-footer .wrapper .footer_inner_cover .middle_part_socials {
+footer .footer_inner_cover .middle_part_socials {
   display: flex;
   margin-bottom: 132px;
   align-items: center;
-  gap: 192px;
+  gap: 120px;
 }
-footer .wrapper .footer_inner_cover .middle_part_socials .networks {
+footer .footer_inner_cover .middle_part_socials .networks {
   display: flex;
   gap: 8px;
 }
-footer .wrapper .footer_inner_cover .middle_part_socials .networks .fb, footer .wrapper .footer_inner_cover .middle_part_socials .networks .youtube, footer .wrapper .footer_inner_cover .middle_part_socials .networks .insta, footer .wrapper .footer_inner_cover .middle_part_socials .networks .linkedin, footer .wrapper .footer_inner_cover .middle_part_socials .networks .twitter {
+footer .footer_inner_cover .middle_part_socials .networks .fb, footer .footer_inner_cover .middle_part_socials .networks .youtube, footer .footer_inner_cover .middle_part_socials .networks .insta, footer .footer_inner_cover .middle_part_socials .networks .linkedin, footer .footer_inner_cover .middle_part_socials .networks .twitter {
   border: 1px solid rgba(192, 192, 192, 0.2509803922);
   border-radius: 4px;
   padding: 4px;
   align-self: center;
 }
-footer .wrapper .footer_inner_cover .middle_part_socials .networks .fb:hover, footer .wrapper .footer_inner_cover .middle_part_socials .networks .youtube:hover, footer .wrapper .footer_inner_cover .middle_part_socials .networks .insta:hover, footer .wrapper .footer_inner_cover .middle_part_socials .networks .linkedin:hover, footer .wrapper .footer_inner_cover .middle_part_socials .networks .twitter:hover {
+footer .footer_inner_cover .middle_part_socials .networks .fb:hover, footer .footer_inner_cover .middle_part_socials .networks .youtube:hover, footer .footer_inner_cover .middle_part_socials .networks .insta:hover, footer .footer_inner_cover .middle_part_socials .networks .linkedin:hover, footer .footer_inner_cover .middle_part_socials .networks .twitter:hover {
   filter: drop-shadow(2px 2px 0.8rem #F46A35);
 }
-footer .wrapper .footer_inner_cover .middle_part_socials .networks .fb::before {
+footer .footer_inner_cover .middle_part_socials .networks .fb::before {
   content: url(../img/svg/socials_fb.svg);
   display: block;
   width: 20px;
   padding: 4px 0 0 4px;
 }
-footer .wrapper .footer_inner_cover .middle_part_socials .networks .youtube::before {
+footer .footer_inner_cover .middle_part_socials .networks .youtube::before {
   content: url(../img/svg/socials_youtube.svg);
   display: block;
   width: 20px;
   padding: 4px 0 0 4px;
 }
-footer .wrapper .footer_inner_cover .middle_part_socials .networks .insta::before {
+footer .footer_inner_cover .middle_part_socials .networks .insta::before {
   content: url(../img/svg/socials_instagram.svg);
   display: block;
   width: 20px;
   padding: 4px 0 0 4px;
 }
-footer .wrapper .footer_inner_cover .middle_part_socials .networks .linkedin::before {
+footer .footer_inner_cover .middle_part_socials .networks .linkedin::before {
   content: url(../img/svg/socials_linkedin.svg);
   display: block;
   width: 20px;
   padding: 4px 0 0 4px;
 }
-footer .wrapper .footer_inner_cover .middle_part_socials .networks .twitter::before {
+footer .footer_inner_cover .middle_part_socials .networks .twitter::before {
   content: url(../img/svg/socials_twitter.svg);
   display: block;
   width: 20px;
   padding: 4px 0 0 4px;
 }
-footer .wrapper .footer_inner_cover .middle_part_socials .stores {
+footer .footer_inner_cover .middle_part_socials .stores {
   margin-top: 4px;
 }
-footer .wrapper .footer_inner_cover .middle_part_socials .stores img {
+footer .footer_inner_cover .middle_part_socials .stores img {
   margin-right: 24px;
 }
-footer .wrapper .footer_inner_cover .lower_part p, footer .wrapper .footer_inner_cover .lower_part span {
+footer .footer_inner_cover .middle_part_socials .map {
+  width: 400px;
+  height: 200px;
+  display: flex;
+}
+footer .footer_inner_cover .middle_part_socials .map iframe:hover {
+  box-shadow: 0 0 8px #F46A35;
+}
+footer .footer_inner_cover .lower_part p, footer .footer_inner_cover .lower_part span {
   font-weight: 400;
   font-size: 12px;
   line-height: 133%;
   letter-spacing: 0.02em;
 }
-footer .wrapper .footer_inner_cover .lower_part p {
+footer .footer_inner_cover .lower_part p {
   color: #bcbdbd;
   margin-bottom: 8px;
 }
-footer .wrapper .footer_inner_cover .lower_part span {
+footer .footer_inner_cover .lower_part span {
+  color: #fff;
+}
+footer .footer_inner_cover .lower_part a {
   color: #fff;
 }
 
@@ -712,8 +701,10 @@ footer .wrapper .footer_inner_cover .lower_part span {
   text-align: center;
 }
 
-.FAQ .wrapper {
+.FAQ {
   background-color: #faebd7;
+}
+.FAQ .wrapper {
   margin-bottom: 80px;
 }
 

@@ -59,7 +59,7 @@ header .wrapper > div {
                 &:first-of-type::after, &:nth-of-type(2)::after, &:last-of-type::after {
                     content: url(../img/svg/Menu_Arrow_Up.svg);
                     display: inline-block;
-                    padding-left: 4px;
+                    padding-left: 4px;                
                 }
             }
         }
@@ -154,8 +154,10 @@ header .wrapper > div {
                 display: flex;
                 flex-direction: column;
                 padding-top: 33px;
-                padding-bottom: 31px;
+                padding-bottom: 44px;
                 margin-bottom: inherit;
+                border-bottom: 1px solid #c0c0c050;
+                width: 90%;
 
                     h4 {
                         margin-bottom: 9px;
@@ -276,8 +278,10 @@ header .wrapper > div {
     }
 }
 
-.limits .wrapper {
+.limits {
     background-color: #f9f9f9;
+    
+    .wrapper {
     padding: 80px 48px;
 
     .limits_offer_and_form {
@@ -333,7 +337,7 @@ header .wrapper > div {
                     text-align: center;
                     padding-top: 104px;
                 }
-                form {
+                .form_layout {
                     margin: 30px 212px 106px 265px;
                     /*border: #F46A35 1px solid;*/
                     display: flex;
@@ -364,78 +368,48 @@ header .wrapper > div {
                         &:last-of-type {
                             .cover {
                                 position: relative;
-                                &::before {
-                                    position: absolute;
-                                    pointer-events: none;
-                                    content: url(../img/svg/form_icon_travel.svg);
-                                    width: 16px;
-                                    height: 16px;
-                                    display: block;
-                                    top: 8px;
-                                    left: 12px;
-                                }
-                                &:nth-child(2)::before {
-                                    position: absolute;
-                                    pointer-events: none;
-                                    content: url(../img/svg/form_icon_offsites.svg);
-                                    width: 16px;
-                                    height: 16px;
-                                    display: block;
-                                    top: 8px;
-                                    left: 12px;
-                                }
-                                &:nth-child(3)::before {
-                                    position: absolute;
-                                    pointer-events: none;
-                                    content: url(../img/svg/form_icon_procurement.svg);
-                                    width: 16px;
-                                    height: 16px;
-                                    display: block;
-                                    top: 8px;
-                                    left: 12px;
-                                }
-                                &:nth-child(4)::before {
-                                    position: absolute;
-                                    pointer-events: none;
-                                    content: url(../img/svg/form_icon_stipendis.svg);
-                                    width: 16px;
-                                    height: 16px;
-                                    display: block;
-                                    top: 8px;
-                                    left: 12px;
-                                }
-                                &:last-child::before {
-                                    position: absolute;
-                                    pointer-events: none;
-                                    content: url(../img/svg/form_icon_budget.svg);
-                                    width: 16px;
-                                    height: 16px;
-                                    display: block;
-                                    top: 8px;
-                                    left: 12px;
-                                }
-                                input {
+                                //new
+                                    list-style: none;
                                     min-width: 416px;
                                     max-width: inherit;
                                     padding: 12px 18px 12px 48px;
                                     border: 1px solid #c0c0c030;
                                     margin-bottom: 8px;
                                     border-radius: 8px;
-                                        // &:last-of-type {
-                                        //     margin-bottom: inherit;
-                                        // }
-                                        &:hover {
-                                            border: 1px solid #21212170;
-                                            box-shadow: 4px 4px 4px #21212130;
-                                        }
-                                        &:focus {
-                                            border: 1px solid $accent_color;
-                                            box-shadow: 4px 4px 4px $accent_color;
-                                        }
-                                        &::placeholder {
-                                            margin-left: 100px;
-                                        }
+                                    &:hover {
+                                        border: 1px solid #21212170;
+                                        box-shadow: 4px 4px 4px #db515150;
                                     }
+                                &::before, &:nth-child(2)::before, &:nth-child(3)::before, &:nth-child(4)::before, &:last-child::before {
+                                    position: absolute;
+                                    pointer-events: none;
+                                    width: 16px;
+                                    height: 16px;
+                                    top: 8px;
+                                    left: 12px;
+                                }
+                                    
+                                &::before {
+                                    content: url(../img/svg/form_icon_travel.svg);
+                                    display: block;
+                                }
+                                &:nth-child(2)::before {
+                                    content: url(../img/svg/form_icon_offsites.svg);
+                                    display: block;
+                                }
+                                &:nth-child(3)::before {
+                                    content: url(../img/svg/form_icon_procurement.svg);
+                                    display: block;
+                                }
+                                &:nth-child(4)::before {
+                                    content: url(../img/svg/form_icon_stipendis.svg);
+                                    display: block;
+                                }
+                                &:last-child::before {
+                                    content: url(../img/svg/form_icon_budget.svg);
+                                    display: block;
+                                }
+                                
                             }
                             
                         }
@@ -443,6 +417,7 @@ header .wrapper > div {
                 }
             }
     }
+}
 }
 
 .lower_slider_cover {
@@ -512,6 +487,12 @@ header .wrapper > div {
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 150%;
+                        img {
+                            &:hover {
+                                box-shadow: 0px 0px 12px 2px #f09b1b;
+                                border-radius: $btn_border_radius;
+                            }
+                        }
                     }
                 }
             }
@@ -528,6 +509,10 @@ header .wrapper > div {
                     justify-content: center;
                     border: 1px solid #21212115;
                     align-items: center;
+                    &:hover {
+                        border: 1px solid $accent_color;
+                        background-color: #21212115;
+                    }
                     img {
                         height: 50px;
                     }
@@ -537,31 +522,30 @@ header .wrapper > div {
     }
 }
 
-.can_do .wrapper > div {
+.can_do {
+    background-color: #c0c0c020;
+    .wrapper > div {
     display: flex;
     justify-content: space-between;
-    background-color: #c0c0c015;
-    
+        
     .offer {
         min-width: 600px;
-
-            h2 {
-                font-family: $global_font;
+            h2, p {
                 font-weight: 400;
+                color: #212121;
+            }
+            h2 {
                 font-size: 40px;
                 line-height: 130%;
                 letter-spacing: 0.04em;
-                color: #212121;
                 padding: 76px 0 0 48px;
                 max-width: 494px;
                 margin-bottom: 23px;
             }
             p {
-                font-weight: 400;
                 font-size: 20px;
                 line-height: 160%;
                 letter-spacing: 0.02em;
-                color: #212121;
                 max-width: 434px;
                 padding-left: 48px;
                 margin-bottom: 20px;
@@ -608,8 +592,9 @@ header .wrapper > div {
         }
     }
 }
+}
 
-footer .wrapper {
+footer {
     background-color: #171717;
     .footer_inner_cover {
         display: flex;
@@ -619,12 +604,8 @@ footer .wrapper {
             display: flex;
             gap: 200px;
             margin-bottom: 100px;
-            .footer_logo {
-                &::before {
-                    content: url(../img/svg/footer_logo_BREX.svg);
-                    display: block;
-                }
-            }
+            align-items: flex-start;
+            
             div {
                 span, ul li a {
                     font-weight: 400;
@@ -639,6 +620,7 @@ footer .wrapper {
                     list-style: none;
                     &:hover {
                         background-color: $accent_color;
+                        border-radius: 2px;
                     }
                 }
                 ul li a {
@@ -655,7 +637,7 @@ footer .wrapper {
             display: flex;
             margin-bottom: 132px;
             align-items: center;
-            gap: 192px;
+            gap: 120px;
             .networks {
                 display: flex;
                 gap: 8px;
@@ -713,6 +695,16 @@ footer .wrapper {
                 margin-top: 4px;
                 img {margin-right: 24px;}
             }
+            .map {
+                width: 400px;
+                height: 200px;
+                display: flex;
+                iframe {
+                    &:hover {
+                        box-shadow: 0 0 8px $accent_color;
+                    }
+                }
+            }
         }
         .lower_part {
             p, span {
@@ -726,6 +718,9 @@ footer .wrapper {
                 margin-bottom: 8px;
             }
             span {
+                color: #fff;
+            }
+            a {
                 color: #fff;
             }
         }
@@ -796,8 +791,8 @@ footer .wrapper {
 }
 
 .FAQ {
+    background-color: #faebd7;
     .wrapper {
-        background-color: #faebd7;
         margin-bottom: 80px;
     }
 }
