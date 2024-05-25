@@ -164,15 +164,7 @@
             padding-top: 40px;
             padding-bottom: 20px;
         }
-        /* .limits .wrapper .limits_offer_and_form .limits_form form {
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        } */
-        /* .limits .wrapper .limits_offer_and_form .limits_form form div:last-of-type .cover input {
-            min-width: 300px;
-        } */
+        
         .limits_form .form_layout {
             display: flex;
             flex-direction: column;
